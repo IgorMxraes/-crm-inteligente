@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect, use, type ReactElement } from 'react';
 import Link from 'next/link';
 import { Contact, InteractionType } from '@/types';
-import { getContactById, addInteraction, updateContactStatus, updateContactStage } from '@/lib/storage';
+import { getContactById, addInteraction } from '@/lib/storage';
 
-const interactionIcons: Record<InteractionType, JSX.Element> = {
+const interactionIcons: Record<InteractionType, ReactElement> = {
   nota: (
     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}

@@ -1,6 +1,14 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "context-mode"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }
